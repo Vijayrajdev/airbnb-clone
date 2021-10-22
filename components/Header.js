@@ -22,7 +22,7 @@ function Header() {
       {/* Middle - Search */}
       <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
         <input
-          className="flex-grow pl-5 bg-transparent outline-none text-gray-600 placeholder-gray-400"
+          className="hidden md:inline flex-grow pl-5 bg-transparent outline-none text-gray-600 placeholder-gray-400"
           type="text"
           placeholder="Start your search"
         />
@@ -30,10 +30,15 @@ function Header() {
       </div>
 
       {/* Right */}
-      <div className="flex  items-center justify-end text-gray-500 space-x-4">
-        <p className="hidden md:inline cursor-pointer">Become a host</p>
-        <GlobeAltIcon className="h-6" />
-        <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
+      <div className="flex  items-center justify-end text-gray-500 space-x-4 ">
+        <div className="rounded-full hover:bg-gray-100 py-2 px-4">
+          <p className="hidden md:inline cursor-pointer">Become a host</p>
+        </div>
+        <div className="rounded-full hover:bg-gray-100 py-2 px-4">
+          <GlobeAltIcon className="hidden md:inline h-6" />
+        </div>
+
+        <div className="flex items-center space-x-2 border-2 p-2 rounded-full hover:shadow-md transistion 150 ease-out">
           <MenuIcon className="h-6" />
           <UserCircleIcon className="h-6" />
         </div>
