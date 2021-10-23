@@ -10,7 +10,7 @@ function Footer() {
         <p>Airbnb Luxe</p>
       </div>
 
-      <div className="space-y-4 text-x5 text-gray-800">
+      <div className="space-y-4  text-x5 text-gray-800">
         <h5 className="font-bold">COMMUNITY</h5>
         <p>Accessbility</p>
         <p>This is not a real site</p>
