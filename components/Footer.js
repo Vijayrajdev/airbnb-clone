@@ -39,7 +39,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="px-32 py-14">
+      <div className="px-12 py-14 md:px-32">
         <div className="border-b  h-1 w-[100%]" />
         <div className=" flex flex-col items-center md:flex md:flex-row md:justify-between text-x5 mt-10 text-gray-800">
           <p>©️ 2021 Airbnb-clone, Inc.</p>
