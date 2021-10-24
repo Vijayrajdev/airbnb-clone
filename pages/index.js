@@ -11,7 +11,7 @@ export default function Home({ exploreData, cardsData }) {
     <div className="">
       <Head>
         <title>Airbnb</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="airbnb_logo.png" />
       </Head>
       <Header />
       <Banner />

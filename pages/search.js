@@ -1,8 +1,10 @@
+import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useRouter } from "next/dist/client/router";
 import format from "date-fns/format";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 function search({ searchResults }) {
   const router = useRouter();
@@ -13,6 +15,10 @@ function search({ searchResults }) {
 
   return (
     <div>
+      <Head>
+        <title>Airbnb</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`} />
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
@@ -46,6 +52,10 @@ function search({ searchResults }) {
               )
             )}
           </div>
+        </section>
+
+        <section className="hidden xl:inline-flex xl:min-w-[400px]">
+          <Map searchResults={searchResults} />
         </section>
       </main>
       <Footer />
