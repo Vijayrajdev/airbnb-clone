@@ -17,7 +17,7 @@ function search({ searchResults }) {
     <div>
       <Head>
         <title>Airbnb</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="airbnb_logo.png" />
       </Head>
       <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`} />
       <main className="flex">
